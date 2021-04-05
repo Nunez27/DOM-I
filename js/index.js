@@ -41,13 +41,29 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let navBar = document.querySelectorAll('nav > a')
-navBar[0].textContent = siteContent['nav-item-1']
-navBar[1].textContent = siteContent['nav-item-2']
-navBar[2].textContent = siteContent['nav-item-3']
-navBar[3].textContent = siteContent['nav-item-4']
-navBar[4].textContent = siteContent['nav-item-5']
-navBar[5].textContent = siteContent['nav-item-6']
+let title = document.querySelector('title')
+title.textContent = 'Great Idea!'
 
+let navBar = document.querySelectorAll('nav > a')
+navBar[0].textContent = siteContent['nav']['nav-item-1']
+navBar[1].textContent = siteContent['nav']['nav-item-2']
+navBar[2].textContent = siteContent['nav']['nav-item-3']
+navBar[3].textContent = siteContent['nav']['nav-item-4']
+navBar[4].textContent = siteContent['nav']['nav-item-5']
+navBar[5].textContent = siteContent['nav']['nav-item-6']
 navBar.forEach(item => item.style.color = 'green')
 
+let h1 = document.querySelector('h1');
+h1.textContent = siteContent.cta['h1'];
+
+let button = document.querySelector('button');
+button.textContent = siteContent.cta['button'];
+
+let firstImg = document.querySelector('#cta-img');
+firstImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let textButton = document.querySelector('.cta-text button');
+textButton.textContent = siteContent['cta']['button'];
+
+let mainContent = document.querySelector('.main-content')
+mainContent.textContent = siteContent['main-content']
