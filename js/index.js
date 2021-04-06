@@ -51,19 +51,71 @@ navBar[2].textContent = siteContent['nav']['nav-item-3']
 navBar[3].textContent = siteContent['nav']['nav-item-4']
 navBar[4].textContent = siteContent['nav']['nav-item-5']
 navBar[5].textContent = siteContent['nav']['nav-item-6']
+const link = document.createElement('a');
+link.textContent = 'Click here'
+document.querySelector('nav').appendChild(link)
+const link2 = document.createElement('a')
+link2.textContent = 'Awesome'
+document.querySelector('nav').prepend(link2)
+
 navBar.forEach(item => item.style.color = 'green')
 
-let h1 = document.querySelector('h1');
+const h1 = document.querySelector('h1');
 h1.textContent = siteContent.cta['h1'];
 
-let button = document.querySelector('button');
+const button = document.querySelector('button');
 button.textContent = siteContent.cta['button'];
 
-let firstImg = document.querySelector('#cta-img');
+const firstImg = document.querySelector('#cta-img');
 firstImg.setAttribute('src', siteContent['cta']['img-src']);
 
-let textButton = document.querySelector('.cta-text button');
+const textButton = document.querySelector('.cta-text button');
 textButton.textContent = siteContent['cta']['button'];
 
-let mainContent = document.querySelector('.main-content')
-mainContent.textContent = siteContent['main-content']
+const features = document.querySelector('.top-content .text-content:nth-of-type(1) h4')
+features.innerText = siteContent['main-content']['features-h4']
+
+const featuresText = document.querySelector('.top-content .text-content:nth-of-type(1) p');
+featuresText.textContent = siteContent['main-content']['features-content'];
+
+const about = document.querySelector('.text-content:nth-of-type(2) h4')
+about.innerText = siteContent["main-content"]["about-h4"]
+
+const aboutText = document.querySelector('.text-content:nth-of-type(2) p')
+aboutText.innerText = siteContent["main-content"]["about-content"]
+
+const middleImg = document.querySelector('#middle-img')
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const service = document.querySelector('.bottom-content .text-content h4')
+service.innerText = siteContent["main-content"]["services-h4"]
+
+const serviceText = document.querySelector('.bottom-content .text-content p')
+serviceText.innerText = siteContent["main-content"]["services-content"]
+
+const product = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+product.innerText = siteContent["main-content"]["product-h4"]
+
+const productText = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+productText.innerText = siteContent["main-content"]["product-content"]
+
+const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+vision.innerText = siteContent["main-content"]["vision-h4"]
+
+const visionText = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+visionText.innerText = siteContent["main-content"]["vision-content"]
+
+const contact = document.querySelector('.contact h4')
+contact.innerText = siteContent['contact']["contact-h4"]
+
+const contactInfo = document.querySelector('.contact p')
+contactInfo.innerText = siteContent['contact']['address']
+
+const contactInfo1 = document.querySelector('.contact p:nth-of-type(2)')
+contactInfo1.innerText = siteContent['contact']['phone']
+
+const contactInfo2 = document.querySelector('.contact p:nth-of-type(3)')
+contactInfo2.innerText = siteContent['contact']['email']
+
+const footer = document.querySelector('footer p')
+footer.innerText = siteContent['footer']['copyright']
