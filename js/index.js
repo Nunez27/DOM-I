@@ -111,14 +111,14 @@ visionText.innerText = siteContent["main-content"]["vision-content"]
 const contact = document.querySelector('.contact h4')
 contact.innerText = siteContent['contact']["contact-h4"]
 
-const contactInfo = document.querySelector('.contact p')
-contactInfo.innerText = siteContent['contact']['address']
+const contactAddress = document.querySelector('.contact p')
+contactAddress.innerText = siteContent['contact']['address']
 
-const contactInfo1 = document.querySelector('.contact p:nth-of-type(2)')
-contactInfo1.innerText = siteContent['contact']['phone']
+const contactPhone = document.querySelector('.contact p:nth-of-type(2)')
+contactPhone.innerText = siteContent['contact']['phone']
 
-const contactInfo2 = document.querySelector('.contact p:nth-of-type(3)')
-contactInfo2.innerText = siteContent['contact']['email']
+const contactEmail = document.querySelector('.contact p:nth-of-type(3)')
+contactEmail.innerText = siteContent['contact']['email']
 
 const footer = document.querySelector('footer p')
 footer.innerText = siteContent['footer']['copyright']
