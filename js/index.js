@@ -58,7 +58,10 @@ const link2 = document.createElement('a')
 link2.textContent = 'Awesome'
 document.querySelector('nav').prepend(link2)
 
-navBar.forEach(item => item.style.color = 'green')
+const color = document.querySelectorAll('nav a')
+
+color.forEach(item => item.style.color = 'green')
+
 
 const h1 = document.querySelector('h1');
 h1.textContent = siteContent.cta['h1'];
